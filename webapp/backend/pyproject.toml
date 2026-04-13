@@ -1,0 +1,18 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Gym Bot Api"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "litestar>=2.21.1",
+    "pydantic-settings>=2.13.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
